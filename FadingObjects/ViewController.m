@@ -26,4 +26,20 @@
 }
 
 
+- (IBAction)FadeIn:(id)sender {
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:1.0];
+    [self.segmentedControl setAlpha:1];
+    [self.Label setAlpha:1];
+    [UIView commitAnimations];
+}
+
+
+- (IBAction)FadeOut:(id)sender {
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:1.0];
+    [self.segmentedControl setAlpha:0];
+    [self.Label setAlpha:0];
+    [UIView commitAnimations];
+}
 @end

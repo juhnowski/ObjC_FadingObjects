@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+- (IBAction)FadeIn:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *FadeOut;
+- (IBAction)FadeOut:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *Label;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 
 @end
